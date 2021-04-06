@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/">
+
+  <link rel="manifest" href="manifest.json">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="PlayUtils">
+  <meta name="apple-mobile-web-app-title" content="PlayUtils">
+  <meta name="theme-color" content="#2b0948">
+  <meta name="msapplication-navbutton-color" content="#2b0948">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-starturl" content=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="http://onecorpore.com.br/wp-content/uploads/2021/04/IconNoBackNoBorder.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="http://onecorpore.com.br/wp-content/uploads/2021/04/IconNoBackNoBorder.png">
+  <link rel="icon" type="image/png" sizes="501x501" href="http://onecorpore.com.br/wp-content/uploads/2021/04/IconNoBackNoBorder.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="501x501" href="http://onecorpore.com.br/wp-content/uploads/2021/04/IconNoBackNoBorder.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="http://onecorpore.com.br/wp-content/uploads/2021/04/IconNoBackNoBorder.png"/>
+
+  <title>play_utils</title>
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=2820342494');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
